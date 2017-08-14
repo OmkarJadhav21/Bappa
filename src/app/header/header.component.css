@@ -1,0 +1,37 @@
+
+#sidebar{
+    position: fixed;
+    width: 200px;
+    height: 100%;
+    background: #151719;
+    left: -200px;
+    transition: all 200ms linear;
+}
+#sidebar.active{
+   left: 0px;
+}
+    
+
+#sidebar ul li{
+
+   color:rgba(230,230,230,0.9);
+   list-style: none;
+   padding: 15px 10px;
+   border-bottom: 1px solid rgba(100, 100, 100, 0.3);
+}
+.header{
+   background-color: orange;
+   height: 50px;
+   /* widows: 100%; */
+
+}
+.btnn{
+   background: transparent;
+   margin-top: 10px;
+   margin-left: 25px;
+}
+.bappa{
+    /* margin-top:3px; */
+    float: left;
+    /* margin-left: 50%; */
+    }
