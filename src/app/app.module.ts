@@ -2,15 +2,21 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './header/header.component';
+import { StickyNavModule } from 'ng2-sticky-nav';
+import { NavbarDirective } from './navbar/navbar.directive';
+import { NavbarComponent } from './navbar/navbar.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent
+    NavbarDirective,
+    NavbarComponent,
+    
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    StickyNavModule
   ],
   providers: [],
   bootstrap: [AppComponent]
