@@ -3,15 +3,17 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-navbar',
   templateUrl: './navbar.component.html',
-  styleUrls: ['./navbar.component.css']
+  styleUrls: ['./navbar.component.scss']
 })
 export class NavbarComponent implements OnInit {
 
   constructor() { }
-
+private list=false;
   ngOnInit() {
   }
-  sideClick(){
-    document.getElementById("sidebar").classList.toggle("active")
+  log(){
+  this.list=!this.list;
+ 
   }
+
 }

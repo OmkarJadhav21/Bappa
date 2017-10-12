@@ -1,16 +1,21 @@
-<div class="row header" > 
-  <div class="col-md-12">
-    <button class="btn btn-primary glyphicon glyphicon-align-left btnn"(click)="sideClick()"></button>
-    <button class="btn btn-primary glyphicon glyphicon-align-left btnn"></button>
-    <button class="btn btn-primary glyphicon glyphicon-align-left btnn"></button>
-    
-    <div><h1>Bappa</h1></div>
-  </div>
-</div>
-<div id="sidebar" >
-<ul style="color:green">
-  <li>Home</li>
-  <li>My Bappa</li>
-  <li>Register</li>
+<div class="navbar"><h2>Mess Application</h2>
+<span class="xy">
+<ul >
+    <li><span (click)="newCall()">Home</span></li>
+    <li (click)="newCall()">Add Mess</li>
+    <li>Login</li>
 </ul>
+</span>
+
+<span class="fa fa-calendar-o bbttnn"(click)="log()"></span>
+
+<ul *ngIf="list"class="res">
+        <li><span (click)="newCall()">Home</span></li>
+        <li (click)="newCall()">Add Mess</li>
+        <li>Login</li>
+    </ul>
+</div>
+
+<div class="loginclss">
+
 </div>

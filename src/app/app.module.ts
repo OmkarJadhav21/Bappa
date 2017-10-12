@@ -1,23 +1,22 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
-
 import { AppComponent } from './app.component';
-import { StickyNavModule } from 'ng2-sticky-nav';
-import { NavbarDirective } from './navbar/navbar.directive';
+import { NgModule, NO_ERRORS_SCHEMA } from '@angular/core';
+import { MDBBootstrapModule } from 'angular-bootstrap-md';
 import { NavbarComponent } from './navbar/navbar.component';
+
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavbarDirective,
-    NavbarComponent,
-    
-  ],
+    NavbarComponent, 
+   ],
+
   imports: [
     BrowserModule,
-    StickyNavModule
-  ],
+    MDBBootstrapModule.forRoot()
+    ],
+  schemas: [ NO_ERRORS_SCHEMA ],
   providers: [],
   bootstrap: [AppComponent]
 })
