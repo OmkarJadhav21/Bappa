@@ -1,18 +1,21 @@
 <div class="navbar"><h2>Mess Application</h2>
 <span class="xy">
 <ul >
-    <li><span (click)="newCall()">Home</span></li>
-    <li (click)="newCall()">Add Mess</li>
-    <li>Login</li>
+    <li><span (click)="HomeFun()">Home</span></li>
+    <li (click)="AddmsFun()">Add Mess</li>
+    <li (click)="LoginFun()" *ngIf="!islogin">Login</li>
+    <li *ngIf="islogin">{{user}}</li>
+    <li (click)="logout()" *ngIf="islogin">logout</li>
 </ul>
 </span>
 
 <span class="fa fa-calendar-o bbttnn"(click)="log()"></span>
 
 <ul *ngIf="list"class="res">
-        <li><span (click)="newCall()">Home</span></li>
-        <li (click)="newCall()">Add Mess</li>
-        <li>Login</li>
+        <li><span (click)="HomeFun()">Home</span></li>
+        <li (click)="AddmsFun()">Add Mess</li>
+        <li (click)="LoginFun()"*ngIf="!islogin">Login</li>
+        <li *ngIf="islogin">{{user}}</li>
     </ul>
 </div>
 

@@ -1,0 +1,87 @@
+<div class="fixx">
+<ngb-tabset>
+  <ngb-tab title="Login">
+    <ng-template ngbTabContent>
+            <div class="card">
+                <div class="card-body mx-4 mt-4">
+                    <div class="md-form" >
+                        <input type="text" #email (click)="activated()"id="Form-email4" class="form-control"> 
+                        <label for="Form-email4"[ngClass]="act2" >Your email</label>
+                    </div>
+                    <div class="md-form pb-3">
+                        <input type="password" #pass id="Form-pass4"  (click)="activate()"class="form-control">
+                        <label for="Form-pass4" [ngClass]="act" >Your password</label>
+                    </div>
+                    <div class="text-center mb-4">
+                        <button type="submit" class="btn btn-danger btn-block z-depth-2" (click)="login(email.value,pass.value)" >Log in</button>
+                    </div>
+                    <p class="font-small grey-text d-flex justify-content-center">Forgot <a href="#" class="dark-grey-text font-bold ml-1"> Password?</a></p>                            
+                    <p class="font-small grey-text d-flex justify-content-center">Don't have an account? <a href="#" class="dark-grey-text font-bold ml-1"> Sign up</a></p>
+                </div>
+                <div class="footer pt-0 mdb-color lighten-3">
+                        <div class="row d-flex justify-content-center">
+                            <p class="font-small white-text mb-2 pt-3">or Login with:</p>
+                        </div>
+                        <div class="row mt-2 mb-3 d-flex justify-content-center">
+                            <!--Facebook-->
+                            <a class="icons-sm fb-ic"><i class="fa fa-facebook white-text fa-lg"> </i></a>
+                            <!--Twitter-->
+                            <a class="icons-sm tw-ic"><i class="fa fa-twitter white-text fa-lg"> </i></a>
+                            <!--Google +-->
+                            <a class="icons-sm gplus-ic"><i class="fa fa-google-plus white-text fa-lg"> </i></a>
+                        </div>
+                </div>
+            </div>
+        </ng-template>
+    </ngb-tab>
+
+  <ngb-tab title="Sign Up">
+    <ng-template ngbTabContent>
+        <section class="form-light">
+        <div class="card">
+            <div class="card-body mx-4">
+                <div class="md-form">
+                    <input type="text" placeholder="Full Name"id="Form-email2" class="form-control">
+                    <!-- <label for="Form-email2" [ngClass]="active">Your email</label> -->
+                </div>
+                <div class="md-form">
+                    <input type="text" placeholder="Email"id="Form-pass2" class="form-control">
+                    <!-- <label for="Form-pass2">Your text</label> -->
+                    </div>
+                    <div class="md-form ">
+                            <input type="text" placeholder="Mobile Number"id="Form-pass2" class="form-control">
+                            <!-- <label for="Form-pass2">Confirm password</label> -->
+                    </div>
+                    <div class="md-form ">
+                            <input type="password" placeholder="Password"id="Form-pass2" class="form-control">
+                            <!-- <label for="Form-pass2">Confirm password</label> -->
+                    </div>
+                    <div class="md-form pb-3">
+                            <input type="password" placeholder=" Confirm Password"id="Form-pass2" class="form-control">
+                            <!-- <label for="Form-pass2">Confirm password</label> -->
+                    </div>
+                        <div class="text-center mb-4">
+                            <button type="button" class="btn btn-danger btn-block z-depth-2" >Sign Up</button>
+                    </div>
+            </div>
+            <div class="footer pt-0 mdb-color lighten-3">
+                <div class="row d-flex justify-content-center">
+                    <p class="font-small white-text mb-2 pt-3">or Sign up with:</p>
+                </div>
+                <div class="row mt-2 mb-3 d-flex justify-content-center">
+                    <!--Facebook-->
+                    <a class="icons-sm fb-ic"><i class="fa fa-facebook white-text fa-lg"> </i></a>
+                    <!--Twitter-->
+                    <a class="icons-sm tw-ic"><i class="fa fa-twitter white-text fa-lg"> </i></a>
+                    <!--Google +-->
+                    <a class="icons-sm gplus-ic"><i class="fa fa-google-plus white-text fa-lg"> </i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    </ng-template>
+  </ngb-tab>
+
+</ngb-tabset>
+</div>
+
