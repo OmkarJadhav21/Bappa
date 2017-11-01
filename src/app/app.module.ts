@@ -7,11 +7,13 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { HomeComponent } from './home/home.component';
 import { MyRoutingModule } from './app.routers';
 import { LoginComponent } from './login/login.component';
-import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { LoginDirDirective } from './Directives/login-dir.directive';
 import { LoginServiceService } from './Services/login-service.service';
 import { FormsModule } from '@angular/forms';
 import{ ReactiveFormsModule }from '@angular/forms';
+import { HttpModule } from '@angular/http';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,7 +30,8 @@ import{ ReactiveFormsModule }from '@angular/forms';
     NgbModule.forRoot(),
     NgbModule ,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpModule
     ],
   schemas: [ NO_ERRORS_SCHEMA ],
   providers: [LoginServiceService],

@@ -23,11 +23,7 @@ constructor(
 
 private list=false;
   ngOnInit() {
-    this.back.loginlis(dt => {
-      this.user=dt.user,
-      this.islogin=dt.islogin
-    
-            });
+
   }
   log(){
   this.list=!this.list;
@@ -41,8 +37,6 @@ AddmsFun(){
 LoginFun(){
 this.rou.navigate(['login'])
 }
-logout(){
-  this.back.logout()
-}
+
 
 }
