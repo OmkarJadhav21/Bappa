@@ -28,19 +28,20 @@
                     </div>
                  </form>
                     <p class="font-small grey-text d-flex justify-content-center">Forgot <a href="#" class="dark-grey-text font-bold ml-1"> Password?</a></p>                            
-                    <p class="font-small grey-text d-flex justify-content-center">Don't have an account? <a href="#" class="dark-grey-text font-bold ml-1"> Sign up</a></p>
+                    <p class="font-small grey-text d-flex justify-content-center">Don't have an account? <a href="login" class="dark-grey-text font-bold ml-1"> Sign up</a></p>
             </div>
             <div class="footer pt-0 mdb-color lighten-3">
                 <div class="row d-flex justify-content-center">
                     <p class="font-small white-text mb-2 pt-3">or Login with:</p>
                 </div>
                 <div class="row mt-2 mb-3 d-flex justify-content-center">
-                    <!--Facebook-->
-                    <a class="icons-sm fb-ic"><i class="fa fa-facebook white-text fa-lg"> </i></a>
-                    <!--Twitter-->
-                    <a class="icons-sm tw-ic"><i class="fa fa-twitter white-text fa-lg"> </i></a>
                     <!--Google +-->
-                    <a class="icons-sm gplus-ic"><i class="fa fa-google-plus white-text fa-lg"> </i></a>
+                    <a class="icons-sm gplus-ic"><i class="fa fa-google white-text fa-lg"(click)="withGoogle()"> </i></a>
+                    <!--Facebook-->
+                    <a class="icons-sm fb-ic"><i class="fa fa-facebook white-text fa-lg" (click)="withFacebook()"> </i></a>
+                    <!--Github-->
+                    <a class="icons-sm tw-ic"><i class="fa fa-github white-text fa-lg"(click)="withGithub()"> </i></a>
+                    
                 </div>
             </div>
         </div>
@@ -94,14 +95,15 @@
                     <div class="row d-flex justify-content-center">
                         <p class="font-small white-text mb-2 pt-3">or Login with:</p>
                     </div>
-                        <div class="row mt-2 mb-3 d-flex justify-content-center">
-                            <!--Facebook-->
-                            <a class="icons-sm fb-ic"><i class="fa fa-facebook white-text fa-lg"> </i></a>
-                            <!--Twitter-->
-                            <a class="icons-sm tw-ic"><i class="fa fa-twitter white-text fa-lg"> </i></a>
-                            <!--Google +-->
-                            <a class="icons-sm gplus-ic"><i class="fa fa-google-plus white-text fa-lg"> </i></a>
-                        </div>
+                    <div class="row mt-2 mb-3 d-flex justify-content-center">
+                        <!--Google +-->
+                        <a class="icons-sm gplus-ic"><i class="fa fa-google white-text fa-lg"(click)="withGoogle()"> </i></a>
+                        <!--Facebook-->
+                        <a class="icons-sm fb-ic"><i class="fa fa-facebook white-text fa-lg" (click)="withFacebook()"> </i></a>
+                        <!--Github-->
+                        <a class="icons-sm tw-ic"><i class="fa fa-github white-text fa-lg"(click)="withGithub()"> </i></a>
+                        
+                    </div>
                 </div>
             </div>
         </ng-template>

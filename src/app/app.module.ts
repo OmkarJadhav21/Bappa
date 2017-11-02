@@ -13,6 +13,7 @@ import { LoginServiceService } from './Services/login-service.service';
 import { FormsModule } from '@angular/forms';
 import{ ReactiveFormsModule }from '@angular/forms';
 import { HttpModule } from '@angular/http';
+import { ContactUsComponent } from './contact-us/contact-us.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { HttpModule } from '@angular/http';
     HomeComponent,
     LoginComponent,
     LoginDirDirective,
+    ContactUsComponent,
    ],
 
   imports: [

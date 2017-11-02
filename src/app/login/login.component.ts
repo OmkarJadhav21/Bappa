@@ -47,8 +47,8 @@ userdata.password=myfrm.value.password;
 userdata.confirmPass=myfrm.value.confirmPass;
 this.lgnser.signUpViaLink(userdata);
 console.log(userdata);
-
 }
+
 login(LgnFrm:NgForm){
   console.log(LgnFrm)
   let login:loggedinpojo=new loggedinpojo();
@@ -57,6 +57,15 @@ login(LgnFrm:NgForm){
   this.lgnser.loggedin(login)
 }
 
+withGoogle(){
+this.lgnser.logGoogle();
+}
+withGithub(){
+  this.lgnser.logGithub();
+}
+withFacebook(){
+  this.lgnser.logFacebook();
+}
 
 }
 
