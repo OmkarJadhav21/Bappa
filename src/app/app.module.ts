@@ -14,6 +14,7 @@ import { FormsModule } from '@angular/forms';
 import{ ReactiveFormsModule }from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { ContactUsComponent } from './contact-us/contact-us.component';
+import { ForgetPassComponent } from './forget-pass/forget-pass.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
     LoginComponent,
     LoginDirDirective,
     ContactUsComponent,
+    ForgetPassComponent,
    ],
 
   imports: [
